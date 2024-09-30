@@ -50,8 +50,6 @@ push @pkt, # Signature packet
 "\xe5\x0e\x39\x4b\x32\xb2\x65\xdc\xe6\x0d\x13\xf0\x6b" .
 "\x72\xfa\xb0\x23";
 
-plan tests => 19 + 2*@pkt;
-
 # Saving packets
 my $pt = Crypt::OpenPGP::Plaintext->new( Data => $text );
 isa_ok $pt, 'Crypt::OpenPGP::Plaintext';
@@ -138,3 +136,4 @@ do {
 	my $saved = Crypt::OpenPGP::PacketFactory->save($parsed);
 	is $saved, $pkt[$i], "parse-save roundtrip identical for packet $i";
 } while( ++$i < @pkt );
+done_testing;

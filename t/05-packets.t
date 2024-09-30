@@ -1,5 +1,5 @@
 use strict;
-use Test::More;
+use Test::More tests => 27;
 
 use Crypt::OpenPGP::Plaintext;
 use Crypt::OpenPGP::UserID;

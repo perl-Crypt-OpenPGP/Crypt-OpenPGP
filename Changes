@@ -1,5 +1,18 @@
 Revision history for Perl module Crypt::OpenPGP
 
+{{$NEXT}}
+
+1.13 -- Sun Sep 29 23:13:17 ADT 2024
+
+    [Module Status]
+    Crypt::OpenPGP has a new maintainer.  Current work is to merge past PRs that
+    are fairly simple to review and test.  Other issues will be reviewed
+    as time permits.
+
+    - GH PR#29 Add use strict to increase kwalitee
+    - GH PR#31 ElGamal: key's p can be a large integer, use Bigint
+    - GH PR#32 Add support for SHA-2 (SHA-512, SHA-256,...) signatures verification.
+
 1.12  2015-08-16 CPAN Day release
     - Add NoVersion parameter to CO::Armour->armour (GH#26)
 

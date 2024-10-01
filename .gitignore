@@ -1,2 +1,5 @@
 Crypt-OpenPGP-*
 *.swp
+blib*
+.build
+Release*

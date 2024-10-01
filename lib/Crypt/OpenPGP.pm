@@ -926,6 +926,14 @@ I<Crypt::OpenPGP> has the following high-level interface. On failure,
 all methods will return C<undef> and set the I<errstr> for the object;
 look below at the I<ERROR HANDLING> section for more information.
 
+=head1 RANDOM SOURCE
+
+I<Crypt::OpenPGP> requires a Random source.  I<Bytes::Random::Secure> is
+now specified as a dependency, as some installations failed to have one
+installed.
+
+I<Crypt::Random>, if installed, is used instead.
+
 =head2 Crypt::OpenPGP->new( %args )
 
 Constructs a new I<Crypt::OpenPGP> instance and returns that object.

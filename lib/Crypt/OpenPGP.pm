@@ -363,9 +363,10 @@ sub verify {
     } else {
         return $pgp->error("SigFile contents are strange");
     }
+    my @pte = ($sig->{type} == 1 ? (Mode => "t") : () );
     unless ($data) {
         if ($param{Data}) {
-            $data = Crypt::OpenPGP::Plaintext->new( Data => $param{Data} );
+            $data = Crypt::OpenPGP::Plaintext->new( Data => $param{Data}, @pte );
         }
         else {
             ## if no Signature or detached sig in SigFile
@@ -374,7 +375,7 @@ sub verify {
             my $fdata = $pgp->_read_files(@files);
             return $pgp->error("Reading data files failed: " . $pgp->errstr)
                 unless defined $fdata;
-            $data = Crypt::OpenPGP::Plaintext->new( Data => $fdata );
+            $data = Crypt::OpenPGP::Plaintext->new( Data => $fdata, @pte );
        }
     }
     my($cert, $kb);

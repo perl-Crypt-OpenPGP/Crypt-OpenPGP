@@ -2,6 +2,14 @@ Revision history for Perl module Crypt::OpenPGP
 
 {{$NEXT}}
 
+1.17 -- Mon Oct 14 14:23:37 ADT 2024
+
+    [Changes since 1.16]
+    - Same as 1.15 - but referencing correct github repo
+
+    [Detailed Changelog]
+    - fb350bd (HEAD -> master) Reference correct github Repo
+
 1.16 -- Mon Oct 14 11:06:32 ADT 2024
 
     [Changes since 1.15]

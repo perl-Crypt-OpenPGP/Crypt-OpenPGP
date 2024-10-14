@@ -394,7 +394,7 @@ sub verify {
                 unpack('H*', $key_id))
                 unless $kb;
         }
-        $cert = $kb->signing_key;
+        $cert = $kb->key_by_id($sig->key_id);
     }
 
 ## pgp2 and pgp5 do not trim trailing whitespace from "canonical text"

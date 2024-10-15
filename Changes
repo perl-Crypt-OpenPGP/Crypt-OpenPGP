@@ -2,6 +2,19 @@ Revision history for Perl module Crypt::OpenPGP
 
 {{$NEXT}}
 
+1.18 -- Mon Oct 14 22:09:32 ADT 2024
+
+    [Changes since 1.17]
+
+    - Merge GH https://github.com/btrott/Crypt-OpenPGP/pull/34 from @pinmarch
+    - fixes decryption of cipher text encrypted with a subkey 
+
+    [Detailed Changelog]
+    - 85c2923 Add Release notes to MANIFEST.SKIP
+    - 57f909e Add test for Fix for RT #79798 - Symkey decrypt failed: Invalid secret key ID
+    - 0bf6750 solves error (Symkey decrypt failed: Invalid secret key ID)
+    - 68371b4 v1.17
+
 1.17 -- Mon Oct 14 14:23:37 ADT 2024
 
     [Changes since 1.16]

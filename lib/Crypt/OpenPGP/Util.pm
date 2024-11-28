@@ -4,11 +4,10 @@ use strict;
 # For some reason, FastCalc causes problems. Restrict to one of these 3 backends
 use Math::BigInt only => 'Pari,GMP,Calc';
 
-use vars qw( @EXPORT_OK @ISA );
 use Exporter;
-@EXPORT_OK = qw( bitsize bin2bigint bin2mp bigint2bin mp2bin mod_exp mod_inverse
-                 dash_escape dash_unescape canonical_text );
-@ISA = qw( Exporter );
+our @EXPORT_OK = qw( bitsize bin2bigint bin2mp bigint2bin mp2bin mod_exp mod_inverse
+                     dash_escape dash_unescape canonical_text );
+our @ISA = qw( Exporter );
 
 sub bitsize {
     my $bigint = Math::BigInt->new($_[0]);

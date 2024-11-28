@@ -1,7 +1,7 @@
 package Crypt::OpenPGP::ErrorHandler;
 use strict;
 
-use vars qw( $ERROR );
+our $ERROR;
 
 sub new    { bless {}, shift }
 sub error  {

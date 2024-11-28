@@ -7,9 +7,8 @@ use Crypt::OpenPGP::Constants qw( DEFAULT_COMPRESS );
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );
 
-use vars qw( %ALG %ALG_BY_NAME );
-%ALG = ( 1 => 'ZIP', 2 => 'Zlib' );
-%ALG_BY_NAME = map { $ALG{$_} => $_ } keys %ALG;
+our %ALG = ( 1 => 'ZIP', 2 => 'Zlib' );
+our %ALG_BY_NAME = map { $ALG{$_} => $_ } keys %ALG;
 
 sub alg {
     return $_[0]->{__alg} if ref($_[0]);

@@ -7,8 +7,7 @@ use Crypt::OpenPGP::ErrorHandler;
 use Crypt::OpenPGP::Util;
 use base qw( Crypt::OpenPGP::ErrorHandler );
 
-use vars qw( %TYPES );
-%TYPES = (
+our %TYPES = (
     0 => 'Simple',
     1 => 'Salted',
     3 => 'Salt_Iter',

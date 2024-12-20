@@ -1,9 +1,7 @@
 package Crypt::OpenPGP::Constants;
 use strict;
 
-use vars qw( %CONSTANTS );
-
-%CONSTANTS = (
+our %CONSTANTS = (
     'PGP_PKT_PUBKEY_ENC' => 1,
     'PGP_PKT_SIGNATURE'  => 2,
     'PGP_PKT_SYMKEY_ENC' => 3,
@@ -27,7 +25,7 @@ use vars qw( %CONSTANTS );
     'DEFAULT_COMPRESS' => 1,
 );
 
-use vars qw( %TAGS );
+our %TAGS;
 my %RULES = (
     '^PGP_PKT' => 'packet',
 );

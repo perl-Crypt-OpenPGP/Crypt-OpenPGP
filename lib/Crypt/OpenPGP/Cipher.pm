@@ -5,8 +5,7 @@ use Crypt::OpenPGP::CFB;
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );
 
-use vars qw( %ALG %ALG_BY_NAME );
-%ALG = (
+our %ALG = (
     1 => 'IDEA',
     2 => 'DES3',
     3 => 'CAST5',
@@ -16,7 +15,7 @@ use vars qw( %ALG %ALG_BY_NAME );
     9 => 'Rijndael256',
     10 => 'Twofish',
 );
-%ALG_BY_NAME = map { $ALG{$_} => $_ } keys %ALG;
+our %ALG_BY_NAME = map { $ALG{$_} => $_ } keys %ALG;
 
 sub new {
     my $class = shift;

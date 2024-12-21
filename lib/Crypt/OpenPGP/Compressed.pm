@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Compressed;
 use strict;
 
+# VERSION
+
 use Compress::Zlib;
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::Constants qw( DEFAULT_COMPRESS );

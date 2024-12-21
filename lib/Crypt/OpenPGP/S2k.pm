@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::S2k;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::ErrorHandler;

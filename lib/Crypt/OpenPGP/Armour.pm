@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Armour;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP;
 use MIME::Base64;
 use Crypt::OpenPGP::ErrorHandler;

@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::PacketFactory;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Constants qw( :packet );
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );

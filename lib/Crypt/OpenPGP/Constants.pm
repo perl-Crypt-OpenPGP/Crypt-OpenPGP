@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Constants;
 use strict;
 
+# VERSION
+
 our %CONSTANTS = (
     'PGP_PKT_PUBKEY_ENC' => 1,
     'PGP_PKT_SIGNATURE'  => 2,

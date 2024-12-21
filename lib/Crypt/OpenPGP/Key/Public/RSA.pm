@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Key::Public::RSA;
 use strict;
 
+# VERSION
+
 use Crypt::RSA::Key::Public;
 use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::Util qw( bitsize bin2mp mp2bin );

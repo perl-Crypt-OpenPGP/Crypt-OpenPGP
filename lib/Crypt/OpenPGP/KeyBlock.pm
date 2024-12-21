@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::KeyBlock;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::PacketFactory;
 
 sub primary_uid {

@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::KeyRing;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Constants qw( PGP_PKT_USER_ID
                                   PGP_PKT_PUBLIC_KEY
                                   PGP_PKT_SECRET_KEY

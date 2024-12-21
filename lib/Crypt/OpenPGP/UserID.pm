@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::UserID;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );
 

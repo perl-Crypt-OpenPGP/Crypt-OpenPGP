@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::ErrorHandler;
 use strict;
 
+# VERSION
+
 our $ERROR;
 
 sub new    { bless {}, shift }

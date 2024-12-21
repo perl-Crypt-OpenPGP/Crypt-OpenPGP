@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Key::Secret;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Key;
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::Key Crypt::OpenPGP::ErrorHandler );

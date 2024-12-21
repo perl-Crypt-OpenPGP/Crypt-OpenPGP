@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::KeyServer;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP;
 use Crypt::OpenPGP::KeyRing;
 use LWP::UserAgent;

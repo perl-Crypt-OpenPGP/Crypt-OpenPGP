@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Signature;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::Signature::SubPacket;
 use Crypt::OpenPGP::Key::Public;

@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::OnePassSig;
 use strict;
 
+# VERSION
+
 sub new { bless { }, $_[0] }
 
 sub parse {

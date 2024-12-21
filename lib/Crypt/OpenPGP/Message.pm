@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Message;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::PacketFactory;
 use Crypt::OpenPGP::ErrorHandler;

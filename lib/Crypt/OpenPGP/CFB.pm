@@ -5,6 +5,8 @@
 package Crypt::OpenPGP::CFB;
 use strict;
 
+# VERSION
+
 sub new {
     my $class = shift;
     my $c = bless { }, $class;

@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Words;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );
 

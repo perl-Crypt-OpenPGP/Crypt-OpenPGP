@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Key::Secret::DSA;
 use strict;
 
+# VERSION
+
 use Crypt::DSA::Key;
 use Crypt::OpenPGP::Key::Public::DSA;
 use Crypt::OpenPGP::Key::Secret;

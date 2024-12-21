@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Key::Secret::ElGamal;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Key::Public::ElGamal;
 use Crypt::OpenPGP::Key::Secret;
 use Crypt::OpenPGP::ErrorHandler;

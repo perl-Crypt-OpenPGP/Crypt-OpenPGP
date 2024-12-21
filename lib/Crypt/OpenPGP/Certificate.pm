@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Certificate;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::S2k;
 use Crypt::OpenPGP::Key::Public;
 use Crypt::OpenPGP::Key::Secret;

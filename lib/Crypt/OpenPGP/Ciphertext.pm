@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Ciphertext;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Util;
 use Crypt::OpenPGP::Cipher;
 use Crypt::OpenPGP::Constants qw( DEFAULT_CIPHER

@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::SessionKey;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Constants qw( DEFAULT_CIPHER );
 use Crypt::OpenPGP::Key::Public;
 use Crypt::OpenPGP::Util qw( mp2bin bin2mp bitsize );

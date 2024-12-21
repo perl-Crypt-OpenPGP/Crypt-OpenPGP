@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::SKSessionKey;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Constants qw( DEFAULT_CIPHER );
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::S2k;

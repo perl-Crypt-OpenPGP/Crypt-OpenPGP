@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::MDC;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );

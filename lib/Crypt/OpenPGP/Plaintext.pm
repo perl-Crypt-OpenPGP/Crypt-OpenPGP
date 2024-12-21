@@ -1,6 +1,8 @@
 package Crypt::OpenPGP::Plaintext;
 use strict;
 
+# VERSION
+
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::ErrorHandler;
 use base qw( Crypt::OpenPGP::ErrorHandler );

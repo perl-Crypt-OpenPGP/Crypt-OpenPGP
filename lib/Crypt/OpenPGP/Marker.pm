@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Marker;
 use strict;
+use warnings;
 
 # VERSION
 

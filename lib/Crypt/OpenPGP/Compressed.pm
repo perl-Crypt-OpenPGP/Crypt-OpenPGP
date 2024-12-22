@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Compressed;
 use strict;
+use warnings;
 
 # VERSION
 

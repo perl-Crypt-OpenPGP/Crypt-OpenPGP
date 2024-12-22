@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Signature;
 use strict;
+use warnings;
 
 # VERSION
 

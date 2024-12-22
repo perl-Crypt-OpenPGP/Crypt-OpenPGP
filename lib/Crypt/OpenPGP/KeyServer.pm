@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::KeyServer;
 use strict;
+use warnings;
 
 # VERSION
 

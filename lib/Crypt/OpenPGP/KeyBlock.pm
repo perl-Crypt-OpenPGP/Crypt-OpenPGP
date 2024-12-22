@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::KeyBlock;
 use strict;
+use warnings;
 
 # VERSION
 

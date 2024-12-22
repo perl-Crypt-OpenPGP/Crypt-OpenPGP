@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Ciphertext;
 use strict;
+use warnings;
 
 # VERSION
 

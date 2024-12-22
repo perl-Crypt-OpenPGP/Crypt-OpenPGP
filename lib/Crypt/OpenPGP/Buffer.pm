@@ -1,6 +1,7 @@
 package Crypt::OpenPGP::Buffer;
 
 use strict;
+use warnings;
 
 # VERSION
 

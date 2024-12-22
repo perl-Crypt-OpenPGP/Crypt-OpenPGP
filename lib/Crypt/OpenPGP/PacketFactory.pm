@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::PacketFactory;
 use strict;
+use warnings;
 
 # VERSION
 

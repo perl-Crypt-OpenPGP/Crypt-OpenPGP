@@ -4,6 +4,7 @@
 
 package Crypt::OpenPGP::CFB;
 use strict;
+use warnings;
 
 # VERSION
 

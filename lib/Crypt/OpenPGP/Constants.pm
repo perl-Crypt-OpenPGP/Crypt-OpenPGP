@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Constants;
 use strict;
+use warnings;
 
 # VERSION
 

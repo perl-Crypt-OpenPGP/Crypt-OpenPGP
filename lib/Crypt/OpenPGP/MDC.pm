@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::MDC;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Words;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::OnePassSig;
 use strict;
+use warnings;
 
 # VERSION
 

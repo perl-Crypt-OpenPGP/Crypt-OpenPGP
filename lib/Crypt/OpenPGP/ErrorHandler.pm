@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::ErrorHandler;
 use strict;
+use warnings;
 
 # VERSION
 

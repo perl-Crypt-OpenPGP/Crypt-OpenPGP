@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::KeyRing;
 use strict;
+use warnings;
 
 # VERSION
 

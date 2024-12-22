@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Key::Secret::DSA;
 use strict;
+use warnings;
 
 # VERSION
 

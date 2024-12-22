@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::SessionKey;
 use strict;
+use warnings;
 
 # VERSION
 

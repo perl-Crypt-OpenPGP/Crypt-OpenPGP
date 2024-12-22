@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Armour;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Digest;
 use strict;
+use warnings;
 
 # VERSION
 
@@ -54,6 +55,8 @@ sub supported {
 
 package Crypt::OpenPGP::Digest::MD5;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -65,6 +68,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::SHA1;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -76,6 +81,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::RIPEMD160;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -87,6 +94,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::SHA224;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -98,6 +107,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::SHA256;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -109,6 +120,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::SHA384;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {
@@ -120,6 +133,8 @@ sub init {
 
 package Crypt::OpenPGP::Digest::SHA512;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Digest );
 
 sub init {

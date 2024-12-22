@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Util;
 use strict;
+use warnings;
 
 # VERSION
 

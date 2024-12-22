@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Key::Secret::RSA;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::S2k;
 use strict;
+use warnings;
 
 # VERSION
 

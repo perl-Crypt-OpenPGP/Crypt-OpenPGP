@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::UserAttribute;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::UserID;
 use strict;
+use warnings;
 
 # VERSION
 

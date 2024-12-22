@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::SKSessionKey;
 use strict;
+use warnings;
 
 # VERSION
 

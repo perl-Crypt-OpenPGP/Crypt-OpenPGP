@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Key::Public;
 use strict;
+use warnings;
 
 # VERSION
 

@@ -1,5 +1,6 @@
 package Crypt::OpenPGP::Cipher;
 use strict;
+use warnings;
 
 # VERSION
 
@@ -76,6 +77,8 @@ sub supported {
 
 package Crypt::OpenPGP::Cipher::IDEA;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub init {
@@ -94,6 +97,8 @@ sub blocksize { 8 }
 
 package Crypt::OpenPGP::Cipher::Blowfish;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::Blowfish' }
@@ -102,6 +107,8 @@ sub blocksize { 8 }
 
 package Crypt::OpenPGP::Cipher::DES3;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::DES_EDE3' }
@@ -110,6 +117,8 @@ sub blocksize { 8 }
 
 package Crypt::OpenPGP::Cipher::CAST5;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { ['Crypt::CAST5_PP', 'Crypt::CAST5'] }
@@ -118,6 +127,8 @@ sub blocksize { 8 }
 
 package Crypt::OpenPGP::Cipher::Twofish;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::Twofish' }
@@ -126,6 +137,8 @@ sub blocksize { 16 }
 
 package Crypt::OpenPGP::Cipher::Rijndael;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::Rijndael' }
@@ -134,6 +147,8 @@ sub blocksize { 16 }
 
 package Crypt::OpenPGP::Cipher::Rijndael192;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::Rijndael' }
@@ -142,6 +157,8 @@ sub blocksize { 16 }
 
 package Crypt::OpenPGP::Cipher::Rijndael256;
 use strict;
+use warnings;
+
 use base qw( Crypt::OpenPGP::Cipher );
 
 sub crypt_class { 'Crypt::Rijndael' }

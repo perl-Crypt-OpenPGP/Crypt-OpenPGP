@@ -31,11 +31,11 @@ sub set {
         my($compat, $cfg_file) = @_;
         my $class = join '::', __PACKAGE__, $compat;
         my $directives = $class->directives;
-        local(*FH, $_, $/);
+        local($_, $/);
         $/ = "\n";
-        open FH, $cfg_file or
+        open ( my $fh, "<", $cfg_file ) or
             return $cfg->error("Error opening file '$cfg_file': $!");
-        while (<FH>) {
+        while (<$fh>) {
             chomp;
             next if !/\S/ || /^#/;
             if (/^\s*([^\s=]+)(?:(?:(?:\s*=\s*)|\s+)(.*))?/) {
@@ -47,7 +47,7 @@ sub set {
                 $code->($cfg, $ref->[1], $val);
             }
         }
-        close FH;
+        close $fh;
     }
 }
 

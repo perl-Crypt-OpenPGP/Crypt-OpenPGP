@@ -38,7 +38,8 @@ my %WriteMakefileArgs = (
     "LWP::UserAgent" => 0,
     "MIME::Base64" => 0,
     "Math::BigInt" => 0,
-    "URI::Escape" => 0
+    "URI::Escape" => 0,
+    "parent" => 0
   },
   "TEST_REQUIRES" => {
     "Test::Exception" => 0,
@@ -72,7 +73,8 @@ my %FallbackPrereqs = (
   "Math::BigInt" => 0,
   "Test::Exception" => 0,
   "Test::More" => 0,
-  "URI::Escape" => 0
+  "URI::Escape" => 0,
+  "parent" => 0
 );
 
 

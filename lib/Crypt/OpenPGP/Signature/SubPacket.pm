@@ -4,8 +4,7 @@ use warnings;
 
 # VERSION
 
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 our %SUBPACKET_TYPES = (
     2  => { name => 'Signature creation time',

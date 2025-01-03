@@ -5,7 +5,7 @@ use warnings;
 
 # VERSION
 
-use base qw( Data::Buffer );
+use parent qw( Data::Buffer );
 
 use Crypt::OpenPGP::Util qw( bin2mp mp2bin bitsize );
 

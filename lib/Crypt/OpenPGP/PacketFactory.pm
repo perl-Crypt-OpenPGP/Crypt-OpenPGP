@@ -5,8 +5,7 @@ use warnings;
 # VERSION
 
 use Crypt::OpenPGP::Constants qw( :packet );
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 our %PACKET_TYPES = (
     PGP_PKT_PUBKEY_ENC()    => { class => 'Crypt::OpenPGP::SessionKey' },

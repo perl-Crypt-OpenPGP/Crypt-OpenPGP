@@ -6,9 +6,7 @@ use warnings;
 
 use Crypt::DSA::Key;
 use Crypt::OpenPGP::Key::Public::DSA;
-use Crypt::OpenPGP::Key::Secret;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::Key::Secret Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::Key::Secret Crypt::OpenPGP::ErrorHandler );
 
 sub secret_props { qw( x ) }
 *sig_props = \&Crypt::OpenPGP::Key::Public::DSA::sig_props;

@@ -5,8 +5,7 @@ use warnings;
 # VERSION
 
 use Carp qw( confess );
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 our %ALG = (
     1 => 'RSA',

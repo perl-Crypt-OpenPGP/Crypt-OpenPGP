@@ -9,8 +9,7 @@ use Crypt::OpenPGP::KeyRing;
 use LWP::UserAgent;
 use URI::Escape;
 
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 sub new {
     my $class = shift;

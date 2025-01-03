@@ -12,8 +12,7 @@ use Crypt::OpenPGP::PacketFactory;
 use Crypt::OpenPGP::Config;
 use Crypt::OpenPGP::Util;
 
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 use File::HomeDir;
 use File::Spec;

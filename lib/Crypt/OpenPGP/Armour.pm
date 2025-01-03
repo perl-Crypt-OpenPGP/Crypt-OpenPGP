@@ -6,8 +6,7 @@ use warnings;
 
 use Crypt::OpenPGP;
 use MIME::Base64;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 sub armour {
     my $class = shift;

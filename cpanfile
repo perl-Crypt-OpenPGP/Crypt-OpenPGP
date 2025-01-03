@@ -20,6 +20,7 @@ requires "LWP::UserAgent" => "0";
 requires "MIME::Base64" => "0";
 requires "Math::BigInt" => "0";
 requires "URI::Escape" => "0";
+requires "parent" => "0";
 requires "perl" => "v5.8.1";
 
 on 'test' => sub {

@@ -8,8 +8,7 @@ use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::Signature::SubPacket;
 use Crypt::OpenPGP::Key::Public;
 use Crypt::OpenPGP::Constants qw( DEFAULT_DIGEST );
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 sub pkt_hdrlen { 2 }
 

@@ -4,8 +4,7 @@ use warnings;
 
 # VERSION
 
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 ## Biometric word lists as defined in manual for
 ## PGPFreeware for Windows 6.5.1, Appendix D

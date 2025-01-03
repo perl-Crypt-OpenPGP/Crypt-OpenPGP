@@ -4,9 +4,7 @@ use warnings;
 
 # VERSION
 
-use Crypt::OpenPGP::Key;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::Key Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::Key Crypt::OpenPGP::ErrorHandler );
 
 sub is_secret { 1 }
 sub all_props { ($_[0]->public_props, $_[0]->secret_props) }

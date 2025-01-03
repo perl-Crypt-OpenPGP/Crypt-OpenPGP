@@ -5,9 +5,7 @@ use warnings;
 # VERSION
 
 use Crypt::OpenPGP::Key::Public::ElGamal;
-use Crypt::OpenPGP::Key::Secret;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::Key::Secret Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::Key::Secret Crypt::OpenPGP::ErrorHandler );
 
 sub secret_props { qw( x ) }
 *public_props = \&Crypt::OpenPGP::Key::Public::ElGamal::public_props;

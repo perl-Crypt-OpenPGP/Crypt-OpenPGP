@@ -4,9 +4,7 @@ use strict;
 # VERSION
 
 use Crypt::DSA::Key;
-use Crypt::OpenPGP::Key::Public;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::Key::Public Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::Key::Public Crypt::OpenPGP::ErrorHandler );
 
 sub can_sign { 1 }
 sub abbrev { 'D' }

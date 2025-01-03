@@ -12,8 +12,7 @@ use Crypt::OpenPGP::Constants qw( PGP_PKT_USER_ID
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::KeyBlock;
 use Crypt::OpenPGP::PacketFactory;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 sub new {
     my $class = shift;

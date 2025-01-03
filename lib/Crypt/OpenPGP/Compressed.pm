@@ -7,8 +7,7 @@ use warnings;
 use Compress::Zlib;
 use Crypt::OpenPGP::Buffer;
 use Crypt::OpenPGP::Constants qw( DEFAULT_COMPRESS );
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 our %ALG = ( 1 => 'ZIP', 2 => 'Zlib' );
 our %ALG_BY_NAME = map { $ALG{$_} => $_ } keys %ALG;

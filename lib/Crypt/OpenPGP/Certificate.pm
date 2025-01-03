@@ -15,8 +15,7 @@ use Crypt::OpenPGP::Constants qw( DEFAULT_CIPHER
                                   PGP_PKT_SECRET_KEY
                                   PGP_PKT_SECRET_SUBKEY );
 use Crypt::OpenPGP::Cipher;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 {
     our %KEY_ALG = (

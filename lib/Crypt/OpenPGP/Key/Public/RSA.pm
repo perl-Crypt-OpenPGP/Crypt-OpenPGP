@@ -6,9 +6,7 @@ use strict;
 use Crypt::RSA::Key::Public;
 use Crypt::OpenPGP::Digest;
 use Crypt::OpenPGP::Util qw( bitsize bin2mp mp2bin );
-use Crypt::OpenPGP::Key::Public;
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::Key::Public Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::Key::Public Crypt::OpenPGP::ErrorHandler );
 
 sub can_encrypt { 1 }
 sub can_sign { 1 }

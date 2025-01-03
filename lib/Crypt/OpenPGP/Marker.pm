@@ -4,8 +4,7 @@ use warnings;
 
 # VERSION
 
-use Crypt::OpenPGP::ErrorHandler;
-use base qw( Crypt::OpenPGP::ErrorHandler );
+use parent qw( Crypt::OpenPGP::ErrorHandler );
 
 sub new { bless { }, $_[0] }
 sub parse {

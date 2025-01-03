@@ -29,8 +29,7 @@ Crypt::OpenPGP::ErrorHandler - Crypt::OpenPGP error handling
 =head1 SYNOPSIS
 
     package Foo;
-    use Crypt::OpenPGP::ErrorHandler;
-    use base qw( Crypt::OpenPGP::ErrorHandler );
+    use parent qw( Crypt::OpenPGP::ErrorHandler );
 
     sub class_method {
         my $class = shift;

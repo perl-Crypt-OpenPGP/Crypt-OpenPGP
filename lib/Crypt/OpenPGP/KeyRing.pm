@@ -25,12 +25,11 @@ sub init {
     my %param = @_;
     $ring->{_data} = $param{Data} || '';
     if (!$ring->{_data} && (my $file = $param{Filename})) {
-        local *FH;
-        open FH, $file or
+        open ( my $fh, "<", $file ) or
             return (ref $ring)->error("Can't open keyring $file: $!");
-        binmode FH;
-        { local $/; $ring->{_data} = <FH> }
-        close FH;
+        binmode $fh;
+        { local $/; $ring->{_data} = <$fh> }
+        close $fh;
     }
     if ($ring->{_data} =~ /^-----BEGIN/) {
         require Crypt::OpenPGP::Armour;

@@ -21,12 +21,11 @@ sub init {
     $msg->{pieces} = [];
     $msg->{_data} = $param{Data} || '';
     if (!$msg->{_data} && (my $file = $param{Filename})) {
-        local *FH;
-        open FH, $file or
+        open ( my $fh, "<", $file ) or
             return (ref $msg)->error("Can't open message $file: $!");
-        binmode FH;
-        { local $/; $msg->{_data} = <FH> }
-        close FH;
+        binmode $fh;
+        { local $/; $msg->{_data} = <$fh> }
+        close $fh;
     }
     $msg->read or return;
     $msg;

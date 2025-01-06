@@ -21,7 +21,7 @@ jobs:
           '5.40',
         ]
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     name: Perl ${{ matrix.perl }}
 
@@ -34,9 +34,9 @@ jobs:
 
       # HTML::Tagset 3.22+ requires Perl 5.10+ so install an older copy.
       - if: ${{ matrix.perl == '5.8' }}
-        run: cpanm --notest HTML::Tagset@3.20
+        run: cpm install --show-build-log-on-failure --without-test HTML::Tagset@3.20
 
-      - run: cpanm --installdeps --notest .
+      - run: cpm install --show-build-log-on-failure --no-prebuilt
 
       - run: perl Makefile.PL
 

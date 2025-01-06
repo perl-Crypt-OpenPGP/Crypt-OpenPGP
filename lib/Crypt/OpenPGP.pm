@@ -758,11 +758,10 @@ sub _read_files {
     my $data = '';
     for my $file (@files) {
         $file ||= '';
-        local *FH;
-        open FH, $file or return $pgp->error("Error opening $file: $!");
-        binmode FH;
-        { local $/; $data .= <FH> }
-        close FH or warn "Warning: Got error closing $file: $!";
+        open (my $fh, '<', $file) or return $pgp->error("Error opening $file: $!");
+        binmode $fh;
+        { local $/; $data .= <$fh> }
+        close $fh or warn "Warning: Got error closing $file: $!";
     }
     $data;
 }

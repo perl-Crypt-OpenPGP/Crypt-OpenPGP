@@ -19,7 +19,7 @@ sub mode { $_[0]->{mode} }
 sub init {
     my $pt = shift;
     my %param = @_;
-    if (my $data = $param{Data}) {
+    if (defined(my $data = $param{Data})) {
         $pt->{data} = $data;
         $pt->{mode} = $param{Mode} || 'b';
         $pt->{timestamp} = time;

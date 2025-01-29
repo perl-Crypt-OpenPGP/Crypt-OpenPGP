@@ -260,7 +260,7 @@ sub sign {
         return $pgp->error( $pgp->errstr );
     my($cert, $data);
     require Crypt::OpenPGP::Signature;
-    unless ($data = $param{Data}) {
+    unless (defined($data = $param{Data})) {
         my $file = $param{Filename} or
             return $pgp->error("Need either 'Data' or 'Filename' to sign");
         $data = $pgp->_read_files($file) or return $pgp->error($pgp->errstr);
@@ -429,7 +429,7 @@ sub encrypt {
     my($data);
     require Crypt::OpenPGP::Cipher;
     require Crypt::OpenPGP::Ciphertext;
-    unless ($data = $param{Data}) {
+    unless (defined($data = $param{Data})) {
         my $file = $param{Filename} or
             return $pgp->error("Need either 'Data' or 'Filename' to encrypt");
         $data = $pgp->_read_files($file) or return $pgp->error($pgp->errstr);

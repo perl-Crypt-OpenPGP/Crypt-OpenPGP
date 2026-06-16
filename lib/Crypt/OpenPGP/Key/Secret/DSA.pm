@@ -4,7 +4,7 @@ use warnings;
 
 # VERSION
 
-use Crypt::DSA::Key;
+use Crypt::DSA::GMP::Key;
 use Crypt::OpenPGP::Key::Public::DSA;
 use parent qw( Crypt::OpenPGP::Key::Secret Crypt::OpenPGP::ErrorHandler );
 
@@ -17,7 +17,7 @@ sub secret_props { qw( x ) }
 
 sub init {
     my $key = shift;
-    $key->{key_data} = shift || Crypt::DSA::Key->new;
+    $key->{key_data} = shift || Crypt::DSA::GMP::Key->new;
     $key;
 }
 
@@ -27,8 +27,8 @@ sub x { $_[0]->{key_data}->priv_key(@_[1..$#_]) }
 sub sign {
     my $key = shift;
     my($dgst) = @_;
-    require Crypt::DSA;
-    my $dsa = Crypt::DSA->new;
+    require Crypt::DSA::GMP;
+    my $dsa = Crypt::DSA::GMP->new;
     my $sig = $dsa->sign(
                   Key => $key->{key_data},
                   Digest => $dgst,

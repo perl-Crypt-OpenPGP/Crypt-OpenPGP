@@ -1,21 +1,17 @@
-# Security Policy for the Crypt::OpenPGP distribution.
+# Security Policy for the Crypt-OpenPGP distribution.
 
-Report issues via email at: Timothy Legge <timlegge@gmail.com>.
+Report security issues by email to Timothy Legge <timlegge@gmail.com>.
 
-
-This is the Security Policy for the Perl Crypt::OpenPGP distribution.
-
-The latest version of the Security Policy can be found in the
-[git repository for Crypt::OpenPGP](https://github.com/perl-Crypt-OpenPGP/Crypt-OpenPGP/blob/main/SECURITY.md).
+This is the Security Policy for Crypt-OpenPGP.
 
 This text is based on the CPAN Security Group's Guidelines for Adding
-a Security Policy to Perl Distributions (version 1.0.0)
+a Security Policy to Perl Distributions (version 1.3.0)
 https://security.metacpan.org/docs/guides/security-policy-for-authors.html
 
 # How to Report a Security Vulnerability
 
-Security vulnerabilities can be reported by e-mail to the current
-project maintainers at Timothy Legge <timlegge@gmail.com>.
+Security vulnerabilities can be reported to the current Crypt-OpenPGP
+maintainers by email to Timothy Legge <timlegge@gmail.com>.
 
 Please include as many details as possible, including code samples
 or test cases, so that we can reproduce the issue.  Check that your
@@ -43,7 +39,7 @@ on the CPANSec website.
 The maintainer(s) aim to acknowledge your security report as soon as
 possible.  However, this project is maintained by a single person in
 their spare time, and they cannot guarantee a rapid response.  If you
-have not received a response from them within 7 days, then
+have not received a response from them within 2 weeks, then
 please send a reminder to them and copy the report to CPANSec at
 <cpan-security@security.metacpan.org>.
 
@@ -60,35 +56,33 @@ They may also forward this issue to CPANSec.
 
 # Which Software This Policy Applies To
 
-Any security vulnerabilities in Crypt::OpenPGP are covered by this policy.
+Any security vulnerabilities in Crypt-OpenPGP are covered by this policy.
+
+Security vulnerabilities in versions of any libraries that are
+included in Crypt-OpenPGP are also covered by this policy.
 
 Security vulnerabilities are considered anything that allows users
 to execute unauthorised code, access unauthorised resources, or to
 have an adverse impact on accessibility or performance of a system.
 
-Security vulnerabilities in upstream software (embedded libraries,
-prerequisite modules or system libraries, or in Perl), are not
-covered by this policy unless they affect Crypt::OpenPGP, or Crypt::OpenPGP can
+Security vulnerabilities in upstream software (prerequisite modules
+or system libraries, or in Perl), are not covered by this policy
+unless they affect Crypt-OpenPGP, or Crypt-OpenPGP can
 be used to exploit vulnerabilities in them.
 
 Security vulnerabilities in downstream software (any software that
-uses Crypt::OpenPGP, or plugins to it that are not included with the
-Crypt::OpenPGP distribution) are not covered by this policy.
+uses Crypt-OpenPGP, or plugins to it that are not included with the
+Crypt-OpenPGP distribution) are not covered by this policy.
 
-## Supported Versions of Crypt::OpenPGP
+## Supported Versions of Crypt-OpenPGP
 
 The maintainer(s) will only commit to releasing security fixes for
-the latest version of Crypt::OpenPGP.
-
-Note that the Crypt::OpenPGP project only supports major versions of Perl
-released in the past 8 years, even though Crypt::OpenPGP will run on
-older versions of Perl.  If a security fix requires us to increase
-the minimum version of Perl that is supported, then we may do so.
+the latest version of Crypt-OpenPGP.
 
 # Installation and Usage Issues
 
 The distribution metadata specifies minimum versions of
-prerequisites that are required for Crypt::OpenPGP to work.  However, some
+prerequisites that are required for Crypt-OpenPGP to work.  However, some
 of these prerequisites may have security vulnerabilities, and you
 should ensure that you are using up-to-date versions of these
 prerequisites.
@@ -99,4 +93,3 @@ newer versions as recommended.
 ## Usage
 
 Please see the software documentation for further information.
-

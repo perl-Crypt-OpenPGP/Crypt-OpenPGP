@@ -48,7 +48,7 @@ sub init {
         $cert->{version} = $param{Version} || 4;
         $cert->{key} = $key;
         our %KEY_ALG;
-        eval require Crypt::DSA::GMP if $KEY_ALG{$key->alg_id} eq 'DSA';
+        require Crypt::DSA::GMP if $KEY_ALG{$key->alg_id} eq 'DSA';
         $cert->{is_secret} = $key->is_secret;
         $cert->{is_subkey} = $param{Subkey} || 0;
         $cert->{timestamp} = time;
@@ -90,7 +90,7 @@ sub uid {
 sub public_cert {
     my $cert = shift;
     our %KEY_ALG;
-    eval require Crypt::DSA::GMP if $KEY_ALG{$cert->pk_alg} eq 'DSA';
+    require Crypt::DSA::GMP if $KEY_ALG{$cert->pk_alg} eq 'DSA';
     return $cert unless $cert->is_secret;
     my $pub = (ref $cert)->new;
     for my $f (qw( version timestamp pk_alg is_subkey )) {

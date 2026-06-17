@@ -156,7 +156,7 @@ sub parse {
         }
     }
     our %KEY_ALG;
-    eval require Crypt::DSA::GMP if $KEY_ALG{$sig->{pk_alg}} eq 'DSA'; 
+    require Crypt::DSA::GMP if $KEY_ALG{$sig->{pk_alg}} eq 'DSA';
     $sig->{chk} = $buf->get_bytes(2);
     ## XXX should be Crypt::OpenPGP::Signature->new($sig->{pk_alg})?
     my $key = Crypt::OpenPGP::Key::Public->new($sig->{pk_alg})
